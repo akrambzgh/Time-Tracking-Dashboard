@@ -1,0 +1,27 @@
+// Colors
+
+// Primary
+
+$primary: (
+  "Blue": hsl(246, 80%, 60%),
+  // work
+  "LightRedWr": hsl(15, 100%, 70%),
+  // play
+  "SoftBlue": hsl(195, 74%, 62%),
+  // study
+  "LightRedSt": hsl(348, 100%, 68%),
+  // exercise
+  "LimeGreen": hsl(145, 58%, 55%),
+  // social
+  "Violet": hsl(264, 64%, 52%),
+  // self care
+  "SoftOrange": hsl(43, 84%, 65%),
+);
+
+// Neutral
+$neutral: (
+  "veryDarkBlue": hsl(226, 43%, 10%),
+  "darkBlue": hsl(235, 46%, 20%),
+  "desaturatedBlue": hsl(235, 45%, 61%),
+  "paleBlue": hsl(236, 100%, 87%),
+);

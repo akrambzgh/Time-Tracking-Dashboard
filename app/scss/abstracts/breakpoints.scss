@@ -1,0 +1,21 @@
+$breakPoints: (
+  "small": 768px,
+  "medium": 922px,
+  "large": 1200px,
+);
+
+@media (min-width: map-get($breakPoints, "small")) {
+  .container {
+    width: 760px;
+  }
+}
+@media (min-width: map-get($breakPoints, "medium")) and (max-width: 1199px) {
+  .container {
+    width: 920px;
+  }
+}
+@media (min-width: map-get($breakPoints, "large")) {
+  .container {
+    width: 1170px;
+  }
+}

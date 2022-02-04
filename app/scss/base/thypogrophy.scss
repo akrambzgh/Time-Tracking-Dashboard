@@ -1,0 +1,6 @@
+@use "../utilities/font.scss" as font;
+@use "../abstracts/weights.scss" as weights;
+
+body {
+  font-family: font.$fontFamily;
+}
