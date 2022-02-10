@@ -1,7 +1,19 @@
+@use "../abstracts/mixins.scss" as mixins;
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
+}
+
+.cards {
+  .container {
+    @media (min-width: 1000px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 280px 280px;
+      gap: 30px;
+    }
+  }
 }

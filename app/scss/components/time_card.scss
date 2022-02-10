@@ -1,0 +1,96 @@
+@use "../abstracts/breakpoints.scss" as breakpoints;
+@use "../abstracts/vars.scss" as vars;
+@use "../abstracts/weights.scss" as weights;
+@use "../abstracts/mixins.scss" as mixins;
+@use "../abstracts/fun.scss" as fun;
+
+.time__card {
+  position: relative;
+  border-radius: 30px;
+  user-select: none;
+  cursor: pointer;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  @include mixins.largeScreen() {
+    overflow: hidden;
+  }
+  &__img {
+    margin: -20px 10px 0 auto;
+    width: 70px;
+    height: 70px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__info {
+    border-radius: 30px;
+    padding: 15px;
+    margin-top: -20px;
+    position: relative;
+    z-index: 3;
+    background-color: map-get($map: vars.$neutral, $key: "darkBlue");
+    @include mixins.largeScreen() {
+      height: 100%;
+      @include mixins.flex(flex-start, space-between, column);
+    }
+    &__type {
+      @include mixins.flex(space-between, center, row);
+      margin-bottom: 20px;
+      @include mixins.largeScreen() {
+        margin-bottom: 80px;
+        margin-top: 20px;
+      }
+      &__title {
+        h3 {
+          font-size: 24px;
+          font-weight: map-get($map: weights.$medium, $key: "500");
+          color: map-get($map: vars.$neutral, $key: "white");
+          margin: 0;
+          @include mixins.largeScreen() {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+    &__time {
+      @include mixins.flex(space-between, center, row);
+
+      &__current {
+        h1 {
+          font-size: 24px;
+          font-weight: map-get($map: weights.$small, $key: "300");
+          color: map-get($map: vars.$neutral, $key: "white");
+          margin: 0;
+        }
+      }
+      &__previous {
+        h4 {
+          padding: 0 18px;
+          color: map-get($map: vars.$neutral, $key: "paleBlue");
+          opacity: 0.5;
+          font-weight: map-get($map: weights.$small, $key: "400");
+        }
+      }
+    }
+  }
+  &.orange {
+    background-color: map-get($map: vars.$primary, $key: "LightRedWr");
+  }
+  &.blue {
+    background-color: map-get($map: vars.$primary, $key: "SoftBlue");
+  }
+  &.red {
+    background-color: map-get($map: vars.$primary, $key: "LightRedSt");
+  }
+  &.green {
+    background-color: map-get($map: vars.$primary, $key: "LimeGreen");
+  }
+  &.purple {
+    background-color: map-get($map: vars.$primary, $key: "Violet");
+  }
+  &.yellow {
+    background-color: map-get($map: vars.$primary, $key: "SoftOrange");
+  }
+}

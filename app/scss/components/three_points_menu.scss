@@ -1,0 +1,48 @@
+@use "../abstracts/breakpoints.scss" as breakpoints;
+@use "../abstracts/vars.scss" as vars;
+@use "../abstracts/weights.scss" as weights;
+@use "../abstracts/mixins.scss" as mixins;
+@use "../abstracts/fun.scss" as fun;
+
+.three__points {
+  cursor: pointer;
+  user-select: none;
+  &:hover {
+    .button {
+      .point {
+        background-color: map-get($map: vars.$neutral, $key: "white");
+        opacity: 1;
+      }
+    }
+  }
+  &__menu {
+    position: absolute;
+    right: 10px;
+    top: 70px;
+    padding: 5px 20px;
+    border-radius: 10px;
+    background-color: map-get($map: vars.$neutral, $key: "white");
+    opacity: 0;
+    visibility: hidden;
+    z-index: 5;
+    li {
+      padding: 10px 0;
+      color: map-get($map: vars.$neutral, $key: "darkBlue");
+    }
+    &.show {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .button {
+    .point {
+      display: inline-block;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: map-get($map: vars.$neutral, $key: "paleBlue");
+      opacity: 0.5;
+      transition: 300ms;
+    }
+  }
+}

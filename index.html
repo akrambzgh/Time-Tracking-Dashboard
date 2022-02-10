@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    displays site properly based on user's device
 
     <link
       rel="icon"
@@ -23,65 +22,238 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
       rel="stylesheet"
+      s
     />
   </head>
   <body>
-    <!-- 
-    Report for
-    Jeremy Robson
-
-    Daily
-    Weekly
-    Monthly
-
-    Work
-    5hrs  daily
-    Previous - 7hrs  daily
-    32hrs  weekly
-    Previous - 36hrs  weekly
-    103hrs  monthly
-    Previous - 128hrs  monthly
-
-    Play
-    1hr  daily
-    Previous - 2hrs  daily
-    10hrs  weekly
-    Previous - 8hrs  weekly
-    23hrs  monthly
-    Previous - 29hrs  monthly
-
-    Study
-    0hrs  daily
-    Previous - 1hr  daily
-    4hrs  weekly
-    Previous - 7hrs  weekly
-    13hrs  monthly
-    Previous - 19hrs  monthly
-
-    Exercise
-    1hr  daily
-    Previous - 1hr  daily
-    4hrs  weekly
-    Previous - 5hrs  weekly
-    11hrs  monthly
-    Previous - 18hrs  monthly
-
-    Social
-    1hr  daily
-    Previous - 3hrs  daily
-    5hrs  weekly
-    Previous - 10hrs  weekly
-    21hrs  monthly
-    Previous - 23hrs  monthly
-
-    Self Care
-    0hrs  daily
-    Previous - 1hr  daily
-    2hrs  weekly
-    Previous - 2hrs  weekly
-    7hrs  monthly
-    Previous - 11hrs Monthly 
-  -->
+    <div class="container">
+      <div class="user__card">
+        <div class="user__card__details">
+          <div class="user__card__details__img">
+            <img src="/images/image-jeremy.png" alt="" />
+          </div>
+          <div class="user__card__details__name">
+            <h3>Report for</h3>
+            <h2>Jeremy Robson</h2>
+          </div>
+        </div>
+        <div class="user__card__tabs">
+          <ul class="user__card__tabs__list">
+            <li class="user__card__tabs__list__item">
+              <button class="tab-btn" data-tab="daily">Daily</button>
+            </li>
+            <li class="user__card__tabs__list__item active">
+              <button class="tab-btn active" data-tab="weekly">Weekly</button>
+            </li>
+            <li class="user__card__tabs__list__item">
+              <button class="tab-btn" data-tab="monthly">Monthly</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="container">
+        <div class="time__card orange">
+          <div class="time__card__img">
+            <img src="/images/icon-work.svg" alt="" />
+          </div>
+          <div class="time__card__info">
+            <div class="time__card__info__type">
+              <div class="time__card__info__type__title">
+                <h3>Work</h3>
+              </div>
+              <div class="time__card__info__type__more">
+                <div class="three__points">
+                  <div class="button">
+                    <span class="point"></span>
+                    <span class="point"></span>
+                    <span class="point"></span>
+                  </div>
+                  <ul class="three__points__menu">
+                    <li>More</li>
+                    <li>About This</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="time__card__info__time">
+              <div class="time__card__info__time__current">
+                <h1 class="time-orange">32hrs</h1>
+              </div>
+              <div class="time__card__info__time__previous">
+                <h4 class="orange-pre">Last Week - 36hrs</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="time__card blue">
+          <div class="time__card__img">
+            <img src="/images/icon-play.svg" alt="" />
+          </div>
+          <div class="time__card__info">
+            <div class="time__card__info__type">
+              <div class="time__card__info__type__title">
+                <h3>Play</h3>
+              </div>
+              <div class="time__card__info__type__more">
+                <div class="three__points">
+                  <div class="button">
+                    <span class="point"></span>
+                    <span class="point"></span>
+                    <span class="point"></span>
+                  </div>
+                  <ul class="three__points__menu">
+                    <li>More</li>
+                    <li>About This</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="time__card__info__time">
+              <div class="time__card__info__time__current">
+                <h1 class="time-blue">10hrs</h1>
+              </div>
+              <div class="time__card__info__time__previous">
+                <h4 class="blue-pre">Last Week - 8hrs</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="time__card red">
+          <div class="time__card__img">
+            <img src="/images/icon-study.svg" alt="" />
+          </div>
+          <div class="time__card__info">
+            <div class="time__card__info__type">
+              <div class="time__card__info__type__title">
+                <h3>Study</h3>
+              </div>
+              <div class="time__card__info__type__more">
+                <div class="three__points">
+                  <div class="button">
+                    <span class="point"></span>
+                    <span class="point"></span>
+                    <span class="point"></span>
+                  </div>
+                  <ul class="three__points__menu">
+                    <li>More</li>
+                    <li>About This</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="time__card__info__time">
+              <div class="time__card__info__time__current">
+                <h1 class="time-red">4hrs</h1>
+              </div>
+              <div class="time__card__info__time__previous">
+                <h4 class="red-pre">Last Week - 7hrs</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="time__card green">
+          <div class="time__card__img">
+            <img src="/images/icon-exercise.svg" alt="" />
+          </div>
+          <div class="time__card__info">
+            <div class="time__card__info__type">
+              <div class="time__card__info__type__title">
+                <h3>Exercise</h3>
+              </div>
+              <div class="time__card__info__type__more">
+                <div class="three__points">
+                  <div class="button">
+                    <span class="point"></span>
+                    <span class="point"></span>
+                    <span class="point"></span>
+                  </div>
+                  <ul class="three__points__menu">
+                    <li>More</li>
+                    <li>About This</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="time__card__info__time">
+              <div class="time__card__info__time__current">
+                <h1 class="time-green">4hrs</h1>
+              </div>
+              <div class="time__card__info__time__previous">
+                <h4 class="green-pre">Last Week - 5hrs</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="time__card purple">
+          <div class="time__card__img">
+            <img src="/images/icon-social.svg" alt="" />
+          </div>
+          <div class="time__card__info">
+            <div class="time__card__info__type">
+              <div class="time__card__info__type__title">
+                <h3>Social</h3>
+              </div>
+              <div class="time__card__info__type__more">
+                <div class="three__points">
+                  <div class="button">
+                    <span class="point"></span>
+                    <span class="point"></span>
+                    <span class="point"></span>
+                  </div>
+                  <ul class="three__points__menu">
+                    <li>More</li>
+                    <li>About This</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="time__card__info__time">
+              <div class="time__card__info__time__current">
+                <h1 class="time-purple">5hrs</h1>
+              </div>
+              <div class="time__card__info__time__previous">
+                <h4 class="purple-pre">Last Week - 10hrs</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="time__card yellow">
+          <div class="time__card__img">
+            <img src="/images/icon-self-care.svg" alt="" />
+          </div>
+          <div class="time__card__info">
+            <div class="time__card__info__type">
+              <div class="time__card__info__type__title">
+                <h3>Self Care</h3>
+              </div>
+              <div class="time__card__info__type__more">
+                <div class="three__points">
+                  <div class="button">
+                    <span class="point"></span>
+                    <span class="point"></span>
+                    <span class="point"></span>
+                  </div>
+                  <ul class="three__points__menu">
+                    <li>More</li>
+                    <li>About This</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="time__card__info__time">
+              <div class="time__card__info__time__current">
+                <h1 class="time-yellow">2hrs</h1>
+              </div>
+              <div class="time__card__info__time__previous">
+                <h4 class="yellow-pre">Last Week - 2hrs</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- JS -->
     <script src="/app/js/app.js"></script>
   </body>

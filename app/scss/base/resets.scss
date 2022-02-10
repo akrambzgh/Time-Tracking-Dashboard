@@ -20,11 +20,14 @@ a {
   text-decoration: none;
 }
 
-textarea {
-  resize: none;
+button {
+  background: none;
   border: 0;
   outline: none;
+  cursor: pointer;
+
   &:focus {
+    border: 0;
     outline: none;
   }
 }
